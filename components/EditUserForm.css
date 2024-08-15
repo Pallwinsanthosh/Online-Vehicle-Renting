@@ -1,0 +1,71 @@
+/* Scoped container for the form */
+.form-container {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scoped form field labels */
+.form-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Scoped form input fields */
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Scoped input field focus state */
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Scoped submit and cancel buttons */
+.form-container button[type="submit"],
+.form-container button[type="button"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Scoped submit button */
+.form-container button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Scoped submit button hover state */
+.form-container button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Scoped cancel button */
+.form-container button[type="button"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Scoped cancel button hover state */
+.form-container button[type="button"]:hover {
+    background-color: #c0392b;
+}
